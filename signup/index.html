@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/-github.io/main.css">
+    <title>
+        Sign Up
+    </title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <!-- this is a link -->
+                        <a href="/-github.io/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/-github.io/products/index.html">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/-github.io/services/index.html">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/-github.io/support/index.html">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/-github.io/about/index.html">
+                            About Us
+                        </a>
+                    </li>                    
+                </ul>
+            </nav>
+            <div id="usersignup">
+                <button>
+                    <a href="/-github.io/signup/index.html">
+                        Sign Up
+                    </a>
+                </button>
+            </div>
+            <div id="userlogin">
+                <form action="login" method="post">
+                    <label for="username">
+                        Username:
+                    </label>
+                    <input type="text" name="username" placeholder="Username" value="username">
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit" disabled="disabled">
+                        Log In
+                    </button>
+                </form>
+            </div>
+        </header>
+    </div>
+    <main>
+        <h1>
+            Sign Up
+        </h1>
+        <p>
+            Here is the signup page
+        </p>
+        <form action="signup" method="post">
+            <label for="firstName">
+                First Name:
+            </label>
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <br>
+            <label for="lastName">
+                Last Name:
+            </label> 
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <br>
+            <label for="phoneNumber">
+                Phone Number:
+            </label>
+            <input type="text" name="phoneNumber" placeholder="Phone Number" required >
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" name="email" placeholder="Email" id="email" required >
+            <br>
+            <hr>
+            <label for="age">
+                Age:
+            </label>
+            <input type="range" name="age" min="18" max="100" value="18" id="age">
+            <br>
+            <!--Radio buttons for gender selection -->
+            <label for="gender">
+                Gender:
+            </label>
+            <input type="radio" name="gender" id="male" value="male" checked="checked">
+            <label for="gender">Male:</label>
+            <input type="radio" name="gender" id="female"  value="female">
+            <label for="gender">Female:</label>
+            <input type="radio" name="gender" id="other"  value="other">
+            <label for="gender">Other:</label>
+            <br>
+            <label for="address">
+                Address:
+            </label>
+            <input type="text" name="address" placeholder="Address">
+            <br>
+            <label for="city">
+                City:
+            </label>
+            <input type="text" name="city" placeholder="City">
+            <label for="state">
+                State: 
+            </label>
+            <select name="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+            <br>
+            <label for="zipCode">
+                Zip Code:
+            </label>
+            <input type="number" name="zipCode" placeholder="Zip Code">
+            <label for="Country">
+                Country:
+            </label>
+            <select name="country">
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="CA">CA</option>
+            </select>
+            <br>
+            <hr>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" name="username" placeholder="Username">
+            <br>
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" name="password" placeholder="Password">
+            <br>
+            <label for="confirmPassword">
+                Confirm Password:
+            </label>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password">
+            <br>
+            <label for="securityQuestion">
+                Security Question:
+            </label>
+            <input type="text" name="securityQuestion" placeholder="Security Question">
+            <br>
+            <label for="securityAnswer">
+                Security Answer:
+            </label>
+            <input type="text" name="securityAnswer" placeholder="Security Answer">
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Sign Up" name="submit" id="submit" disabled="disabled">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; Copyright 2024 Jobba Inc
+            <br>
+            <a href="https://github.com/TheGreatSkyline" target="_blank">
+                TheGreatSkyline
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
