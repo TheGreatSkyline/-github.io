@@ -11,52 +11,85 @@
     margin: 0;
     padding: 0;
 }
+.headercontainer{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: #55d6aa;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header h1{
+    padding: 0px;
+    text-align: center;
+}
+.logo{
+    float: left;
+    padding: 10px 0;
+}
 nav{
-    background-color: red;
-    color: white;
+    float: right;
 }
 nav ul{
-    list-style-type: none;
+    margin: 0;
 }
-nav ul li{
-    display: inline;
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
 }
-#headercontainer{
-    background-color: rgb(36, 225, 200); 
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
-.usersignup{
-    background-color: rgb(36, 225, 200); 
+nav a:hover{
+    color: #000;
 }
-.userlogin{
-    background-color: rgb(36, 225, 200); 
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
 }
-.content{
-    background-color: rgb(104, 240, 222); 
+nav a:hover::before{
+    width: 100%;
+    transition: all ease-in-out 250ms;
 }
-
 body{
-    background-color: blue;
-    color: white;
-}
-h1{
-    font-weight: 900;
+    background-color: #55d6aa;
+    margin: 10px;
 }
 
-
-
-
-
-
-
+h2{
+    margin-left: 20px;
+}
+h3{
+    margin-left: 20px;
+}
+h4{
+    margin-left: 40px;
+}
+h4 img{
+    float: left;
+    padding: 0;
+}
+p{
+    margin: 50px;
+}
+address{
+    margin: 80px;
+}
 footer{
-    background-color: rgb(36, 225, 200); 
-}
-footer p{
+    text-align: center;
     color: white;
-}
-footer a{
-    color: white;
-}
-footer a:hover{
-    color: steelblue;
 }
