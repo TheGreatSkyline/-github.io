@@ -1,95 +1,54 @@
 /*********************************************
-*
 * This the stylesheets for the Final Project
-*
 * Author: Joaquin Gomez
-*
 * Purpose: Stylesheets for the Final Project
-*
 ********************************************/
 *{
     margin: 0;
     padding: 0;
-}
-.headercontainer{
-    width: 80%;
-    margin: 0 auto;
-}
-header{
-    background-color: #55d6aa;
-}
-header::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-header h1{
-    padding: 0px;
-    text-align: center;
-}
-.logo{
-    float: left;
-    padding: 10px 0;
-}
-nav{
-    float: right;
-}
-nav ul{
-    margin: 0;
-}
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 23px;
-    position: relative;
-}
-nav a{
-    color: #444;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
 }
-nav a:hover{
-    color: #000;
+navbar{
+    background: #7cdadf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
 }
-nav a::before{
-    content: "";
-    display: block;
-    height: 5px;
-    width: 0%;
-    background-color: #444;
-    position: absolute;
-    top: 0;
-}
-nav a:hover::before{
-    width: 100%;
-    transition: all ease-in-out 250ms;
-}
-body{
-    background-color: #55d6aa;
-    margin: 10px;
+navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-h2{
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding-left: 20px;
     margin-left: 20px;
+    position: relative;
 }
-h3{
-    margin-left: 20px;
+li{
+    list-style: none;
+    display: inline-block;
 }
-h4{
-    margin-left: 40px;
-}
-h4 img{
-    float: left;
-    padding: 0;
-}
-p{
-    margin: 50px;
-}
-address{
-    margin: 80px;
-}
-footer{
-    text-align: center;
+li a{
     color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background: #7cdadf;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }
