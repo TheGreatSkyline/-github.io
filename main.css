@@ -3,19 +3,46 @@
 * Author: Joaquin Gomez
 * Purpose: Stylesheets for the Final Project
 ********************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
     text-decoration: none;
 }
-navbar{
+body{
+    margin: 0%;
+    padding: 0;
+    
+}
+.navbar{
     background: #7cdadf;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
 }
-navdiv{
+.navbar ul{
+    list-style: none;
+    position: relative;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul ul li{
+    float: none;
+    position: relative;
+}
+.navbar ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.navbar ul li:hover > ul{
+    display: block;
+}
+.navdiv{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +52,7 @@ navdiv{
     display: flex;
     align-items: center;
     justify-content:left;
+    padding-right: 20px;
     padding-left: 20px;
     margin-left: 20px;
     position: relative;

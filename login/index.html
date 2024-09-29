@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/-github.io/main.css">
+    <link rel="stylesheet" href="/./main.css">
     <title>
         Log In
     </title>
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <div>
-                    <a href="/-github.io/index.html">
-                        <img src="/-github.io/images/logo.jpg" alt="company logo" height="100" width="100">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="/./index.html">
+                        <img src="/./images/logo.jpg" alt="company logo" height="100" width="100">
                     </a>
                     <ul>
                         <li>
-                            <a href="/-github.io/index.html">
+                            <a href="/./index.html">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="/-github.io/products/index.html">
+                            <a href="/./products/index.html">
                                 Products
                             </a>
                         </li>
                         <li>
-                            <a href="/-github.io/services/index.html">
+                            <a href="/./services/index.html">
                                 Services
                             </a>
                         </li>
                         <li>
-                            <a href="/-github.io/support/index.html">
+                            <a href="/./support/index.html">
                                 Support
                             </a>
                         </li>
                         <li>
-                            <a href="/-github.io/contact/index.html">
+                            <a href="/./contact/index.html">
                                 Contact Us
                             </a>
                             <ul>
                                 <li>
-                                    <a href="/-github.io/about/index.html">
+                                    <a href="/./about/index.html">
                                         About Us
                                     </a>
                                 </li>
@@ -51,12 +51,12 @@
                         </li>
                     </ul>
                     <button>
-                        <a href="/-github.io/login/index.html">
+                        <a href="/./login/index.html">
                             Sign in
                         </a>
                     </button>
                     <button>
-                        <a href="/-github.io/signup/index.html">
+                        <a href="/./signup/index.html">
                             Sign Up
                         </a>
                     </button>
@@ -65,7 +65,21 @@
         </nav>
     </header>
     <main>
-
+        <div>
+            <form action="login" method="post">
+                <label for="username">
+                    Username:
+                </label>
+                <input type="text" name="username" placeholder="Username" value="username">
+                <label for="password">
+                    Password:
+                </label>
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit" disabled="disabled">
+                    Log In
+                </button>
+            </form>
+    </div>
     </main>
     <footer>
         <p>
