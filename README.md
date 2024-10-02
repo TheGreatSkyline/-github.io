@@ -1,4 +1,4 @@
 # -github.io
 Author: Joaquin Gomez
 Purpose:Final Project
-Resource:
+Resource: google fonts
